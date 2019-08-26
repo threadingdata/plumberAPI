@@ -9,7 +9,7 @@ RUN apt-get update -qq && apt-get install -y \
   libxml2-dev \
   libpq-dev -y
 
-RUN R CMD javareconf
+#RUN R CMD javareconf
 
 RUN R -e "install.packages('devtools')"
 RUN R -e 'devtools::install_github("fdrennan/plumberAPI")'
